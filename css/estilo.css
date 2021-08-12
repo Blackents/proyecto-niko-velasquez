@@ -45,6 +45,7 @@ video{
     background: url('../textura.png')
 }
 .Titulo{
+    text-align: center;
     position: relative;
     z-index: 20;
     text-align: center;
@@ -57,12 +58,14 @@ video{
     margin-bottom: 0-5em;
 }
 .Titulo h2{
+    text-align: center;
     font-weight: 500;
     font-size: 3.5rem;
     margin: 0;
     font-family: 'Oswald', sans-serif;
 }
 .head{
+    text-align: center;
     padding: 0;
     height: 100%;
     display: flex;
@@ -193,7 +196,7 @@ background: #f2f2f2;
     flex-wrap: wrap;
 }
 .img-galeria{
-    
+    object-fit: cover;
     width: 30%;
     display: inline-block;
     margin-bottom: 15px;
@@ -220,6 +223,7 @@ background: #f2f2f2;
     transform: translate(0);
 }
 .agregar-imagen{
+    object-fit: cover;
     width: 60%;
     border-radius: 10px;
     transform: scale(0);
@@ -321,4 +325,79 @@ footer{
     height: 2px;
     background: #fff;
     margin-bottom: 60px;
+}
+
+
+@media screen and (max-width:600px) {
+    .titulo {
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .contenido-header {
+        height: 650px;
+    }
+
+    .nav {
+        padding: 0 10px;
+    }
+
+    .contenido-header>img {
+        width: 200px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background: #667db6;
+             background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+             background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+            right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+    }
+
+    .nav .menudos {
+
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+
+    }
+    .nav .enlaces-header a {
+        color: #fff;
+    }
+
+    .menu {
+        display: block;
+    }
+    .articulo {
+        width: 95%;
+    }
+        .questions>img {
+        width: 200px;
+    }
+       .numbers .number {
+        width: 95%;
+    }
+    .results-text h4 {
+        font-size: 35px;
+    }
+       .services>img {
+        width: 200px;
+    }
+
+    .box-skills h4 {
+        width: 100%;
+    }
+    .partFooter {
+        width: 95%;
+        margin-bottom: 40px;
+    }
 }
